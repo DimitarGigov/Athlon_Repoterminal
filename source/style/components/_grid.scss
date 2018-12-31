@@ -1,0 +1,139 @@
+/*
+=================================
+	Grid Section
+=================================
+*/
+.teaser {
+	background-color: $darkGrey;
+    
+    @include breakpoint(desktopmini) {
+        height: 100%; 
+        width: 100%;
+       }
+       @include breakpoint(tablet) { 
+        height: 100%;
+        width: 100%;
+     }
+       @include breakpoint(mobile) { 
+        height: 100%;
+        width: 100%;
+    }
+    h5 {
+        display: inline-block;
+        margin: 60px 414px 0px 414px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 36px;
+        font-weight: normal;
+        text-align: center;
+        color: $white;
+        @include breakpoint(desktopmini) {
+            height: 100%; 
+            width: 100%;
+            margin-left: 0px;
+           }
+           @include breakpoint(tablet) { 
+            height: 100%;
+            width: 100%;
+            margin-left: 0px;
+         }
+           @include breakpoint(mobile) { 
+            height: 100%;
+            width: 100%;
+            margin-left: 0px;
+        }
+    }
+    .grid {
+        width: 900px;
+        font-size: 0;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 40px;
+        @include breakpoint(desktopmini) {
+            height: 100%; 
+            width: 100%;
+            
+           }
+           @include breakpoint(tablet) { 
+            height: 100%;
+            width: 100%;
+            
+         }
+           @include breakpoint(mobile) { 
+            height: 100%;
+            width: 100%;
+            display: block;
+            padding: 20px;
+        }
+        .col-1-3 {
+            display: inline-block;
+            width: 33%;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+            background-color: $white;
+            margin-right: 20px;
+            margin-bottom: 40px;
+
+               @include breakpoint(mobile) { 
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+            h6 {
+                padding-left: 15px;
+                padding-top: 20px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 24px;
+                letter-spacing: normal;
+                color: $black;
+                justify-content: flex-start;
+                @include breakpoint(mobile) { 
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            span {
+                display: flex;
+                padding: 15px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: $black;
+                margin-bottom: 20px;
+            }
+            div {
+                display: flex;
+                align-content: flex-end;
+                margin-bottom: 20px;
+                @include breakpoint(mobile) { 
+                    height: 100%;
+                    width: 100%;
+                    padding: 15px;
+                    justify-content:  center;
+                }
+            a { 
+                display: flex;
+                width: 130px;
+                margin-left: 15px;
+                border: 2px solid $black;
+                border-radius: 5px;
+                padding: 7px 17px 7px 18px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                justify-content: center;
+                color: $black;
+                text-decoration: none;
+                @include breakpoint(mobile) { 
+                    height: 100%;
+                    width: 100%;
+                    
+                }
+            }
+        }
+            img {
+                width: 100%;;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,91 @@
+/*
+===============================
+	Submit info and button
+===============================
+*/
+
+.row {
+    .wrapper {
+        display: inline-block;
+        width: 400px;
+        margin: -70px 0px 0px 0px;
+        @include breakpoint(desktopLaptop) {
+            width: 400px;
+            }
+            @include breakpoint(desktopmini) { 
+            width: 400px;
+            margin: auto;
+            }
+            @include breakpoint(tablet) { 
+      
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            }
+            @include breakpoint(mobile) {
+            width: 400px;
+            margin-left: 20px;
+            margin-top: 20px;
+            }
+        .support {
+            display: inline-block;
+            ul {
+               margin-bottom: 70px;
+                li {
+                     margin-bottom: 10px;
+                     font-family: 'Source Sans Pro', sans-serif;
+                     font-size: 16px;
+                     color: $purple;
+               }
+            }
+        }
+         aside  {
+            display: inline-block;    
+            margin: 20px 0px 20px 0px;   
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 16px;
+            line-height: 1.2;
+            width: 360px;
+            color: $black;
+            a {
+                color: $purple;
+            }
+        }
+        .btn {
+             display: inline-block;
+                margin: 0px 0px 0px 0px;
+                div {
+                    margin-bottom: 20px;
+                }
+        
+             input   {
+                 width: 120px;
+                 background-color: $purple;
+                 border: 1px solid $purple;
+                 border-radius: 5px;
+                 font-family: 'Source Sans Pro', sans-serif;
+                 font-size: 14px;
+                 font-weight: 600;
+                 color: $white;
+                 text-align: center;
+                 letter-spacing: normal;
+                 padding: 10px 38px;
+                 display: inline-block;
+                 cursor: pointer;
+            }
+             small {
+                display: inline-block;
+                margin: 14px 0px 0px 12px;
+                opacity: 0.7;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 14px;
+                vertical-align: top;
+                color: $black;
+            
+                span {
+                    color: $red;
+                }
+            }
+        }
+    }
+}
