@@ -47,30 +47,30 @@
           width: 10px;
           height: 10px;
         }
-            }
-        }
+      }
+     }
     }
-    div {
-      position: absolute;
-      top: 96px;
-      left: 260px;
-      color: $white;
-      @include breakpoint(desktopLaptop) {
-        width: 100%;
-        left: 0px;
-        }
-      @include breakpoint(desktopmini) { 
-        width: 100%;
-        left: 0px;
-        }
-      @include breakpoint(tablet) { 
-        width: 100%;
-        left: 0px;
-        }
-      @include breakpoint(mobile) {
-        width: 100%;
-        left: 0px;
-        }
+  div {
+    position: absolute;
+    top: 96px;
+    left: 260px;
+    color: $white;
+    @include breakpoint(desktopLaptop) {
+      width: 100%;
+      left: 0px;
+    }
+    @include breakpoint(desktopmini) { 
+      width: 100%;
+      left: 0px;
+    }
+    @include breakpoint(tablet) { 
+      width: 100%;
+      left: 0px;
+    }
+    @include breakpoint(mobile) {
+      width: 100%;
+      left: 0px;
+    }
     h1 {
       text-align: center;
       margin-bottom: 7px;
