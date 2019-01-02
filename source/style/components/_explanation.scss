@@ -4,8 +4,8 @@
 =================================
 */
 .explanation {
-    position: relative;
-    background-color: $grey;
+  position: relative;
+  background-color: $grey;
   p {
     width: 730px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -26,7 +26,7 @@
       margin-top: 20px;
       width: 100%;
     }
-    }
+  }
   aside {
     position: absolute;
     right: 59px;
@@ -56,16 +56,16 @@
       @include breakpoint(desktopmini) { 
         margin-bottom: 5px;
         margin-left: 18px;
-    }
+      }
       @include breakpoint(tablet) { 
         margin-left: 18px;
         margin-bottom: 5px;
-    }
+      }
       @include breakpoint(mobile) { 
         margin-bottom: 5px;
+      }
     }
-        }
-    a{
+    a {
       img {
         display: block;
         width: 36px;
@@ -92,8 +92,8 @@
           display: block;
           margin-bottom: 5px;
         }
-       }
-      }      
-    }
+      }
+    }      
+  }
 }
     
