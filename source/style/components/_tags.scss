@@ -4,7 +4,7 @@
 =================================
 */
 .main {
-<<<<<<< HEAD
+
     @include breakpoint(desktopmini) {
             
         width: 100%;
@@ -80,7 +80,7 @@
             }
         }
     }
-=======
+
   @include breakpoint(desktopmini) {
     width: 100%;
     padding: 20px;
@@ -153,5 +153,5 @@
       }
     }
   }
->>>>>>> 6e3efe5f4af06c90371f0555c49cdd6407d4e024
+
 }
