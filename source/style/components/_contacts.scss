@@ -50,22 +50,22 @@
         height: 100%; 
         width: 100%;
         left: 0px;
-        }
+      }
       @include breakpoint(desktopmini) {
         height: 100%; 
         width: 100%;
         left: 0px;
-        }
-        @include breakpoint(tablet) { 
-          height: 100%;
-          width: 100%;
-          left: 0px;
-        }
-        @include breakpoint(mobile) { 
-          height: 100%;
-          width: 100%;
-          left: 0px;
-        }
+      }
+      @include breakpoint(tablet) { 
+        height: 100%;
+        width: 100%;
+        left: 0px;
+      }
+      @include breakpoint(mobile) { 
+        height: 100%;
+        width: 100%;
+        left: 0px;
+      }
     }
     span {
       position: absolute;
@@ -83,25 +83,25 @@
         width: 100%;
         left: 0px;
         padding: 20px;
-        }
+      }
       @include breakpoint(desktopmini) {
         height: 100%;
         width: 100%;
         left: 0px;
         padding: 20px;
-        }
+      }
       @include breakpoint(tablet) { 
         height: 100%;
         width: 100%;
         left: 0px;
         padding: 20px;
-        }
+      }
       @include breakpoint(mobile) { 
         height: 100%;
         width: 100%;
         left: 0px;
         padding: 20px;
-        }
+      }
     }
     div{
       position: absolute;
@@ -113,25 +113,25 @@
         width: 100%;
         padding-top: 40px;
         left: 0px;
-        }
+      }
       @include breakpoint(desktopmini) {
         height: 100%;
         width: 100%;
         padding-top: 40px;
         left: 0px;
-        }
+      }
       @include breakpoint(tablet) { 
         height: 100%;
         width: 100%;
         padding-top: 40px;
         left: 0px;
-        }
+      }
       @include breakpoint(mobile) { 
         height: 100%;
         width: 100%;
         padding-top: 40px;
         left: 0px;
-        }
+      }
       a {
         border: 2px solid $white;
         border-radius: 5px;
@@ -141,7 +141,7 @@
         font-size: 14px;
         font-weight: 600;
         text-align: center;
-        }
       }
     }
+  }
 }
