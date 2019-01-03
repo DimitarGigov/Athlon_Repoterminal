@@ -18,8 +18,9 @@
     }
     @include breakpoint(tablet) { 
       display: block;
-      margin: auto;
+      margin: 0 auto;
       margin-top: 20px;
+      width: 300px;
     }
     @include breakpoint(mobile) {
       width: 400px;
@@ -46,6 +47,9 @@
       line-height: 1.2;
       width: 360px;
       color: $black;
+      @include breakpoint(mobile) {
+        width: 300px;
+      }
       a {
         color: $purple;
       }
