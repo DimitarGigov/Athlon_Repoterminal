@@ -37,6 +37,7 @@
       }
       @include breakpoint(tablet) { 
         display: block;
+        left: 0px;
         margin: 0 auto;
       }
       @include breakpoint(mobile) {
