@@ -32,25 +32,25 @@
     right: 59px;
     top: 0px;
     @include breakpoint(desktopLaptop) {
-      top: 20px;
+      margin-top: 40px;
       right: 0px;
       margin-bottom: 30px;
       display: inline;
     }
     @include breakpoint(desktopmini) {
-      top: 20px;
+      margin-top: 50px;
       right: 0px;
       margin-bottom: 30px;
       display: inline;
     }
     @include breakpoint(tablet) { 
-      top: 20px;
+      margin-top: 50px;
       right: 0px;
       margin-bottom: 30px;
       display: inline;
     }
     @include breakpoint(mobile) {
-      top: 20px; 
+      margin-top: 50px;
       right: 0px;
       margin-bottom: 30px;
       display: inline;
