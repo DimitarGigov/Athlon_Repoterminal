@@ -4,129 +4,137 @@
 =================================
 */
 .teaser {
-	background-color: $darkGrey;
+  background-color: $darkGrey;
   @include breakpoint(desktopmini) {
-    height: 100%; 
-    width: 100%;
-  }
-  @include breakpoint(tablet) { 
     height: 100%;
     width: 100%;
   }
-  @include breakpoint(mobile) { 
+  @include breakpoint(tablet) {
     height: 100%;
     width: 100%;
   }
+  @include breakpoint(mobile) {
+    height: 100%;
+    width: 100%;
+  }
+
   h5 {
+    color: $white;
     display: inline-block;
-    margin: 60px 414px 0px 414px;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 36px;
     font-weight: normal;
+    margin: 60px 414px 0 414px;
     text-align: center;
-    color: $white;
     @include breakpoint(desktopmini) {
-      height: 100%; 
-      width: 100%;
-      margin-left: 0px;
-    }
-    @include breakpoint(tablet) { 
       height: 100%;
+      margin-left: 0;
       width: 100%;
-      margin-left: 0px;
     }
-    @include breakpoint(mobile) { 
+    @include breakpoint(tablet) {
       height: 100%;
+      margin-left: 0;
       width: 100%;
-      margin-left: 0px;
+    }
+    @include breakpoint(mobile) {
+      height: 100%;
+      margin-left: 0;
+      width: 100%;
     }
   }
+
   .grid {
-    width: 900px;
-    font-size: 0;
     display: flex;
+    font-size: 0;
     margin: 0 auto;
     margin-top: 40px;
+    width: 900px;
     @include breakpoint(desktopmini) {
-      height: 100%; 
-      width: 100%;     
-    }
-    @include breakpoint(tablet) { 
-      height: 100%;
-      width: 100%;      
-    }
-    @include breakpoint(mobile) { 
       height: 100%;
       width: 100%;
-      display: block;
-      padding: 20px;
     }
+    @include breakpoint(tablet) {
+      height: 100%;
+      width: 100%;
+    }
+    @include breakpoint(mobile) {
+      display: block;
+      height: 100%;
+      padding: 20px;
+      width: 100%;
+    }
+
     .col-1-3 {
-      display: inline-block;
-      width: 33%;
-      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
       background-color: $white;
-      margin-right: 20px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, .1);
+      display: inline-block;
       margin-bottom: 40px;
-      @include breakpoint(mobile) { 
+      margin-right: 20px;
+      width: 33%;
+      @include breakpoint(mobile) {
+        display: block;
         height: 100%;
         width: 100%;
-        display: block;
       }
+
       h6 {
-        padding-left: 15px;
-        padding-top: 20px;
+        color: $black;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 24px;
-        letter-spacing: normal;
-        color: $black;
         justify-content: flex-start;
-        @include breakpoint(mobile) { 
+        letter-spacing: normal;
+        padding-left: 15px;
+        padding-top: 20px;
+        @include breakpoint(mobile) {
           height: 100%;
           width: 100%;
         }
       }
+
       span {
+        color: $black;
         display: flex;
-        padding: 15px;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 16px;
-        line-height: 1.5;
         letter-spacing: normal;
-        color: $black;
+        line-height: 1.5;
         margin-bottom: 20px;
+        padding: 15px;
       }
+
       div {
-        display: flex;
         align-content: flex-end;
+        display: flex;
         margin-bottom: 20px;
-        @include breakpoint(mobile) { 
+        @include breakpoint(mobile) {
           height: 100%;
-          width: 100%;
-          padding: 15px;
           justify-content:  center;
+          padding: 15px;
+          width: 100%;
         }
-        a { 
-          display: flex;
-          width: 130px;
-          margin-left: 15px;
+
+        a {
           border: 2px solid $black;
           border-radius: 5px;
-          padding: 7px 17px 7px 18px;
+          color: $black;
+          display: flex;
           font-family: 'Source Sans Pro', sans-serif;
           font-size: 14px;
           font-weight: 600;
           justify-content: center;
-          color: $black;
+          margin-left: 15px;
+          padding: 7px 17px 7px 18px;
           text-decoration: none;
-          @include breakpoint(mobile) { 
+          width: 130px;
+          @include breakpoint(mobile) {
             height: 100%;
-            width: 100%;        
+            width: 100%;
           }
         }
       }
+
       img {
-        width: 100%;;
+        width: 100%;
       }
     }
   }

@@ -3,163 +3,174 @@
 	Primary-Footer
 =================================
 */
-
 .primary-footer {
-	background-color: $black;
-  height: 107px;
+  background-color: $black;
   font-size: 0;
+  height: 107px;
   position: relative;
   @include breakpoint(desktopmini) {
-    width: 100%;
     height: 200px;
-  }
-  @include breakpoint(tablet) { 
     width: 100%;
-    height: 200px;
   }
-  @include breakpoint(mobile) { 
+  @include breakpoint(tablet) {
+    height: 200px;
     width: 100%;
-    height: 200px;
   }
-  aside{
+  @include breakpoint(mobile) {
+    height: 200px;
+    width: 100%;
+  }
+
+  aside {
+    color: $white;
+    left: 50px;
     position: absolute;
     top: 24px;
-    left: 50px;
-    color: $white;
     @include breakpoint(desktopmini) {
-      width: 100%;
       left: 20px;
-    }
-    @include breakpoint(tablet) { 
       width: 100%;
-      left: 20px;
     }
-    @include breakpoint(mobile) { 
+    @include breakpoint(tablet) {
+      left: 20px;
       width: 100%;
-      left: 20px;
     }
+    @include breakpoint(mobile) {
+      left: 20px;
+      width: 100%;
+    }
+
     h6 {
+      color: $white;
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 26px;
-      color: $white;
       margin-bottom: 5px;
     }
+
     span {
+      color: $white;
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 16px;
-      opacity: 0.75;
-      color: $white;
+      opacity: .75;
     }
   }
-    
+
   .foot-article {
     position: absolute;
     right: 65px;
     top: 55px;
     @include breakpoint(desktopmini) {
-      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      left: 0;
       top: 130px;
-      left: 0px;
-    }
-    @include breakpoint(tablet) { 
       width: 100%;
+    }
+    @include breakpoint(tablet) {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      left: 0;
       top: 130px;
-      left: 0px;
-    }
-    @include breakpoint(mobile) { 
       width: 100%;
+    }
+    @include breakpoint(mobile) {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      left: 0;
       top: 130px;
-      left: 0px;
+      width: 100%;
     }
+
     img {
-      width: 28px;
       height: 28px;
+      width: 28px;
     }
+
     ul {
-      li {      
+      li {
         display: inline-block;
-        vertical-align: middle;
         margin-left: 20px;
+        vertical-align: middle;
+
         a {
           color: $white;
+
           h6 {
-            font-size: 14px;
             color: $white;
+            font-size: 14px;
           }
         }
       }
     }
   }
+
   .navbar-foot {
     display: flex;
     justify-content: flex-end;
     @include breakpoint(desktopmini) {
+      display: flex;
       width: 100%;
-      display: flex;           
     }
-    @include breakpoint(tablet) { 
-      width: 100%;
+    @include breakpoint(tablet) {
       display: flex;
       flex-direction: column;
-    }
-    @include breakpoint(mobile) { 
       width: 100%;
+    }
+    @include breakpoint(mobile) {
       display: flex;
       flex-direction: column;
+      width: 100%;
     }
+
     ul {
-      margin-top: 20px;
       margin-right: 60px;
+      margin-top: 20px;
+
       li {
-        display: inline-block;
-        margin-left: 30px;
         color: $white;
-        opacity: 0.75;
+        display: inline-block;
         font-family: 'Source Sans Pro', sans-serif;
-        text-align: right;
         font-size: 14px;
         letter-spacing: normal;
+        margin-left: 30px;
+        opacity: .75;
+        text-align: right;
         @include breakpoint(desktopmini) {
+          display: flex;
           width: 100%;
-          display: flex;             
         }
-        @include breakpoint(tablet) { 
-          width: 100%;
+        @include breakpoint(tablet) {
           display: flex;
           flex-direction: column;
-        }
-        @include breakpoint(mobile) { 
           width: 100%;
-          display: flex;
-          flex-direction: column;              
         }
+        @include breakpoint(mobile) {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+
         a {
           color: $white;
+
           small {
             &:first-child {
-              display: inline-block;
-              opacity: 1;
               color: $white;
+              display: inline-block;
               font-family: 'Source Sans Pro', sans-serif;
-              text-align: right;
               font-size: 14px;
               font-weight: 600;
-              letter-spacing: normal;                                          
-            }   
+              letter-spacing: normal;
+              opacity: 1;
+              text-align: right;
+            }
           }
         }
       }
     }
-  }  
+  }
 }
 
 

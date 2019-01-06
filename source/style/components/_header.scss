@@ -4,211 +4,229 @@
 =================================
 */
 .container {
-	width: 1280px;
-	margin: 0 auto;
   background-color: $white;
+  margin: 0 auto;
+  width: 1280px;
+
   a {
     text-decoration: none;
+
     &:hover {
-      opacity: 0.7;
+      opacity: .7;
     }
   }
 }
+
 .primary-header {
-	width: 1280px;
   background-color: $white;
+  width: 1280px;
+  margin: 0 auto;
   @include breakpoint(desktopLaptop) {
-    width: 100%;
-    height: 100%;
     background-color: $white;
+    height: 100%;
+    width: 100%;
   }
-  @include breakpoint(desktopmini) { 
-    width: 100%;
-    height: 100%;
+  @include breakpoint(desktopmini) {
     background-color: $white;
+    height: 100%;
+    width: 100%;
   }
   @include breakpoint(tablet) {
-    width: 100%;
-    height: 100%;
     background-color: $white;
+    height: 100%;
+    width: 100%;
   }
   @include breakpoint(mobile) {
-    width: 100%;
-    height: 100%;
     background-color: $white;
+    height: 100%;
+    width: 100%;
   }
 }
+
 .navbar-top {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0; 
-	border-bottom: 1px solid #e4e4e4;
   background-color: $white;
+  border-bottom: 1px solid #e4e4e4;
   font-size: 0;
-  @include breakpoint(tablet) { 
-    border: 0px;
+  position: sticky;
+  top: 0;
+  @include breakpoint(tablet) {
+    border: 0;
   }
-  @include breakpoint(mobile) { 
-    border: 0px;
+  @include breakpoint(mobile) {
+    border: 0;
   }
+
   ul {
-    background-color: $white;    
+    background-color: $white;
+
     li {
       display: inline-block;
-	    padding: 7px 30px 8px 0px;
-	    font-family: 'Source Sans Pro', sans-serif;
-	    font-size: 12px; 
-      letter-spacing: 0;
-      position: relative;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 12px;
       left: 870px;
+      letter-spacing: 0;
+      padding: 7px 30px 8px 0px;
+      position: relative;
       @include breakpoint(desktopLaptop) {
-        height: auto; 
-        width: 100%;
-        left: 0px;
         display: inline;
+        height: auto;
+        left: 0;
+        width: 100%;
       }
       @include breakpoint(desktopmini) {
-        height: auto; 
-        width: 100%;
-        left: 0px;
         display: inline;
-      }
-      @include breakpoint(tablet) { 
         height: auto;
+        left: 0;
         width: 100%;
-        left: 0px;
-        display: inline;
       }
-      @include breakpoint(mobile) { 
+      @include breakpoint(tablet) {
+        display: inline;
         height: auto;
+        left: 0;
+        width: 100%;
+      }
+      @include breakpoint(mobile) {
+        display: inline;
+        height: auto;
+        left: 0;
         width: auto;
-        display: inline;
-        left: 0px;
       }
+
       .dropdownicon {
         &::before {
-          content: '';
           @include arrow(down, $black, 2);
-          position: absolute;
-          top: 12px;
-          right: 17px;
           background: $white;
-          @include breakpoint(mobile) { 
-            display: none
+          content: '';
+          position: absolute;
+          right: 17px;
+          top: 12px;
+          @include breakpoint(mobile) {
+            display: none;
           }
         }
       }
+
       a {
         color: $black;
-        text-decoration: none;   
-        &:hover{
-          opacity: 0.7;
+        text-decoration: none;
+
+        &:hover {
+          opacity: .7;
         }
-      }    
+      }
     }
-  }   
+  }
 }
+
 .logo {
-  img{
-    width: 177px;
+  img {
+    background-color: $white;
+    float: left;
     line-height: 60px;
     margin: 15px 30px 15px 50px;
-    float: left;
-    background-color: $white;
+    width: 177px;
     @include breakpoint(mobile) {
-      margin-left: 5px;
       background-color: $white;
+      margin-left: 5px;
     }
   }
 }
+
 .navbar-bottom {
-  position: relative;
   background-color: $white;
-  @include breakpoint(desktopmini) { 
+  position: relative;
+  @include breakpoint(desktopmini) {
+    background-color: $white;
     display: inline-block;
     height: 100%;
-    background-color: $white;
   }
-  @include breakpoint(tablet) { 
-    display: inline-block;
-    width: 100%;
-    height: 100%;
+  @include breakpoint(tablet) {
     background-color: $white;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
   }
   @include breakpoint(mobile) {
-    width: 100%;
+    background-color: $white;
     display: inline-block;
     height: 100%;
-    background-color: $white;
+    width: 100%;
   }
+
   ul {
-    background-color: $white;    
+    background-color: $white;
+
     li {
-	    display: inline-block;
-	    margin: 40px 35px 37px 20px;
-	    font-size: 14px;
-	    font-family: 'Source Sans Pro', sans-serif;
+      display: inline-block;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 14px;
       font-weight: 400;
+      margin: 40px 35px 37px 20px;
       position: relative;
-      @include breakpoint(desktopmini) { 
-        display: inline-block;    
+      @include breakpoint(desktopmini) {
+        display: inline-block;
       }
-      @include breakpoint(tablet) { 
+      @include breakpoint(tablet) {
         display: block;
         margin: 0 auto;
         margin-top: 5px;
       }
-      @include breakpoint(mobile) { 
+      @include breakpoint(mobile) {
         display: block;
         margin: 5px;
       }
-      a{
+
+      a {
         color: $black;
       }
-      .arrow{
-        color: $black;    
+
+      .arrow {
+        color: $black;
+
         &::before {
-          content: '';
           @include arrow(down, $black , 2.5);
-          position: absolute;
-          top: 6px;
-          right: 0px;
-          margin-right: -14px;
           background: $white;
-          @include breakpoint(tablet) { 
+          content: '';
+          margin-right: -14px;
+          position: absolute;
+          right: 0;
+          top: 6px;
+          @include breakpoint(tablet) {
             display: block;
             left: 320px;
           }
-          @include breakpoint(mobile) { 
+          @include breakpoint(mobile) {
             display: block;
             left: 268px;
           }
-        }            
-      }  
+        }
+      }
     }
+
     .searchbutton {
       position: absolute;
-      top: 33px;
       right: 30px;
+      top: 33px;
       width: 50px;
-      @include breakpoint(desktopmini) { 
+      @include breakpoint(desktopmini) {
         display: block;
-        right: 0px;
+        right: 0;
       }
-      @include breakpoint(tablet) { 
+      @include breakpoint(tablet) {
         display: block;
-        right: 0px;
+        right: 0;
       }
-      @include breakpoint(mobile) { 
+      @include breakpoint(mobile) {
         display: block;
-        right: 0px;
+        right: 0;
         top: 37px;
       }
+
       img {
-        width: 24px;
         height: 24px;
-      }  
-    }          
-  }    
+        width: 24px;
+      }
+    }
+  }
 }
 

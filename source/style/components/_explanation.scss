@@ -4,102 +4,107 @@
 =================================
 */
 .explanation {
-  position: relative;
   background-color: $grey;
+  position: relative;
+
   p {
-    width: 730px;
-    font-family: 'Source Sans Pro', sans-serif;
     color: $black;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     margin-top: 40px;
+    width: 730px;
     @include breakpoint(desktopmini) {
       margin-top: 20px;
       width: 100%;
     }
-    @include breakpoint(tablet) { 
+    @include breakpoint(tablet) {
       margin-top: 20px;
       width: 100%;
     }
-    @include breakpoint(mobile) { 
+    @include breakpoint(mobile) {
       margin-top: 20px;
       width: 100%;
     }
   }
+
   aside {
     position: absolute;
     right: 59px;
-    top: 0px;
+    top: 0;
     @include breakpoint(desktopLaptop) {
-      margin-top: 40px;
-      right: 0px;
-      margin-bottom: 30px;
       display: inline;
+      margin-bottom: 30px;
+      margin-top: 40px;
+      right: 0;
     }
     @include breakpoint(desktopmini) {
-      margin-top: 50px;
-      right: 0px;
-      margin-bottom: 30px;
       display: inline;
+      margin-bottom: 30px;
+      margin-top: 50px;
+      right: 0;
     }
-    @include breakpoint(tablet) { 
-      margin-top: 50px;
-      right: 0px;
-      margin-bottom: 30px;
+    @include breakpoint(tablet) {
       display: inline;
+      margin-bottom: 30px;
+      margin-top: 50px;
+      right: 0;
     }
     @include breakpoint(mobile) {
-      margin-top: 50px;
-      right: 0px;
-      margin-bottom: 30px;
       display: inline;
+      margin-bottom: 30px;
+      margin-top: 50px;
+      right: 0;
     }
+
     h5 {
       font-family: 'Source Sans Pro', sans-serif;
       font-weight: 600;
       margin-bottom: 15px;
-      @include breakpoint(desktopmini) { 
+      @include breakpoint(desktopmini) {
         margin-bottom: 5px;
         margin-left: 18px;
       }
-      @include breakpoint(tablet) { 
-        margin-left: 18px;
+      @include breakpoint(tablet) {
         margin-bottom: 5px;
+        margin-left: 18px;
       }
-      @include breakpoint(mobile) { 
+      @include breakpoint(mobile) {
         margin-bottom: 5px;
       }
     }
+
     a {
       img {
         display: block;
-        width: 36px;
         height: 36px;
         margin-bottom: 15px;
+        width: 36px;
+
         &:hover {
-          opacity: 0.75;
+          opacity: .75;
         }
-        @include breakpoint(desktopmini) { 
-          right: 0px;
+        @include breakpoint(desktopmini) {
+          display: block;
+          margin-bottom: 5px;
           margin-left: 20px;
+          right: 0;
+        }
+        @include breakpoint(tablet) {
           display: block;
           margin-bottom: 5px;
-        }
-        @include breakpoint(tablet) { 
-          right: 0px;
           margin-left: 20px;
-          display: block;
-          margin-bottom: 5px;
+          right: 0;
         }
-        @include breakpoint(mobile) { 
-          top: 0px;
-          left: 0px;
+        @include breakpoint(mobile) {
           display: block;
+          left: 0;
           margin-bottom: 5px;
+          top: 0;
         }
       }
-    }      
+    }
   }
 }
     

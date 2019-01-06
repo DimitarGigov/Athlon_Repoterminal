@@ -1,98 +1,103 @@
-
 /*
 ==============================
 	2nd Page Container Mask
 ==============================
 */
 .mask {
-    background-color: $black;
-    height: 280px;
-    position: relative;
-    @include breakpoint(desktopLaptop) {
-      width: 100%;
-    }
-    @include breakpoint(desktopmini) { 
-      width: 100%;
-    }
-    @include breakpoint(tablet) { 
-      width: 100%;
-    }
-    @include breakpoint(mobile) {
-      width: 100%;
-    }
-    aside {
-      position: absolute;
-      left: 50px;
-      top: 27px;
-      a {
-        color: $white;
-        opacity: 0.75;
+  background-color: $black;
+  height: 280px;
+  position: relative;
+  @include breakpoint(desktopLaptop) {
+    width: 100%;
+  }
+  @include breakpoint(desktopmini) {
+    width: 100%;
+  }
+  @include breakpoint(tablet) {
+    width: 100%;
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
+
+  aside {
+    left: 50px;
+    position: absolute;
+    top: 27px;
+
+    a {
+      color: $white;
+      font-size: 14px;
+      opacity: .75;
+      @include breakpoint(tablet) {
         font-size: 14px;
-        @include breakpoint(tablet) { 
-          font-size: 14px;
+      }
+      @include breakpoint(mobile) {
+        font-size: 12px;
+      }
+
+      img {
+        height: 18px;
+        margin-bottom: 2px;
+        margin-right: 6px;
+        vertical-align: middle;
+        width: 18px;
+        @include breakpoint(tablet) {
+          height: 14px;
+          width: 14px;
         }
         @include breakpoint(mobile) {
-          font-size: 12px;
-        }
-        img {
-          width: 18px;
-          height: 18px;
-          margin-right: 6px;
-          margin-bottom: 2px;
-          vertical-align: middle;
-          @include breakpoint(tablet) { 
-            width: 14px;
-            height: 14px;
-          }
-          @include breakpoint(mobile) {
-            width: 12px;
-            height: 12px;
-          }
+          height: 12px;
+          width: 12px;
         }
       }
     }
+  }
+
   div {
+    color: $white;
+    left: 260px;
     position: absolute;
     top: 96px;
-    left: 260px;
-    color: $white;
     @include breakpoint(desktopLaptop) {
+      left: 0;
       width: 100%;
-      left: 0px;
     }
-    @include breakpoint(desktopmini) { 
+    @include breakpoint(desktopmini) {
+      left: 0;
       width: 100%;
-      left: 0px;
     }
-    @include breakpoint(tablet) { 
+    @include breakpoint(tablet) {
+      left: 0;
       width: 100%;
-      left: 0px;
     }
     @include breakpoint(mobile) {
+      left: 0;
       width: 100%;
-      left: 0px;
     }
+
     h1 {
-      text-align: center;
-      margin-bottom: 7px;
+      color: $white;
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 46px;
-      color: $white;
       letter-spacing: normal;
-      @include breakpoint(tablet) { 
+      margin-bottom: 7px;
+      text-align: center;
+      @include breakpoint(tablet) {
         font-size: 32px;
       }
       @include breakpoint(mobile) {
         font-size: 26px;
       }
     }
+
     p {
       color: $white;
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 20px;
-      text-align: center;
       letter-spacing: normal;
-      @include breakpoint(tablet) { 
+      text-align: center;
+      @include breakpoint(tablet) {
         font-size: 16px;
       }
       @include breakpoint(mobile) {

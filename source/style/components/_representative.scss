@@ -4,132 +4,141 @@
 =================================
 */
 .hero {
-	background-image: url("../images/back.jpg");
-	color: $white;
+  background-image: url('../images/back.jpg');
+  color: $white;
   height: 480px;
   position: relative;
   @include breakpoint(desktopLaptop) {
     display: inline-block;
     width: 100%;
   }
-  @include breakpoint(desktopmini) { 
+  @include breakpoint(desktopmini) {
     display: inline-block;
     width: 100%;
   }
-  @include breakpoint(tablet) { 
+  @include breakpoint(tablet) {
     display: inline-block;
     width: 100%;
   }
   @include breakpoint(mobile) {
-    width: 100%;
     display: inline-block;
+    width: 100%;
   }
+
   a {
-    opacity: 0.8;
+    color: $white;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
-    font-weight: 400;
-    position: relative;
-    left: 50px;
-    top: 27px;
     font-stretch: normal;
+    font-weight: 400;
+    left: 50px;
+    letter-spacing: .05em;
     line-height: normal;
-    letter-spacing: 0.05em;
-    color: $white;
-    @include breakpoint(desktopmini) { 
+    opacity: .8;
+    position: relative;
+    top: 27px;
+    @include breakpoint(desktopmini) {
       display: inline-block;
       width: 100%;
     }
-    @include breakpoint(tablet) { 
+    @include breakpoint(tablet) {
       display: inline-block;
       width: 100%;
     }
     @include breakpoint(mobile) {
-      width: 100%;
       display: inline-block;
+      width: 100%;
     }
+
     img {
-      width: 18px;
       height: 18px;
-      vertical-align: bottom;
       margin-right: 3px;
+      vertical-align: bottom;
+      width: 18px;
     }
   }
+
   h1 {
-    margin: 0 auto;
-    width: 580px;
-    left: 350px;
-    right: 350px;
-    top: 153px;
-    font-size: 46px;
-    font-family: 'Source Sans Pro', sans-serif;
     color: $white;
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 46px;
     font-stretch: normal;
-    line-height: normal;
+    font-style: normal;
+    font-weight: normal;
+    left: 350px;
     letter-spacing: 1px;
-    text-align: center;
+    line-height: normal;
+    margin: 0 auto;
     position: absolute;
+    right: 350px;
+    text-align: center;
+    top: 153px;
+    width: 580px;
     @include breakpoint(desktopLaptop) {
       display: inline-block;
-      width: 100%;
-      left: 0px;
       font-size: 46px;
-      padding: 0px 40px 40px 40px;
-    }
-    @include breakpoint(desktopmini) { 
-      display: inline-block;
+      left: 0;
+      padding: 0 40px 40px;
       width: 100%;
-      left: 0px;
+    }
+    @include breakpoint(desktopmini) {
+      display: inline-block;
       font-size: 46px;
-      padding: 0px 40px 40px 40px;
-    }
-    @include breakpoint(tablet) { 
-      display: inline-block;
+      left: 0;
+      padding: 0 40px 40px;
       width: 100%;
-      left: 0px;
+    }
+    @include breakpoint(tablet) {
+      display: inline-block;
       font-size: 32px;
-      padding: 0px 40px 40px 40px;
+      left: 0;
+      padding: 0 40px 40px;
+      width: 100%;
     }
     @include breakpoint(mobile) {
-      width: 100%;
       display: inline-block;
-      left: 0px;
       font-size: 28px;
-      padding: 0px 40px 40px 40px;
+      left: 0;
+      padding: 0 40px 40px;
+      width: 100%;
     }
   }
+
   .avatar {
     position: relative;
     top: 380px;
+
     ul {
       font-family: 'Source Sans Pro', sans-serif;
-      position: absolute;
       left: 100px;
+      position: absolute;
       top: 5px;
+
       img {
-        width: 14px;
         height: 14px;
+        margin-left: 3px;
         position: absolute;
         top: 3px;
-        margin-left: 3px;
+        width: 14px;
       }
     }
+
     li {
       margin-bottom: 8px;
-      &:li:last-child {
+
+      &:last-child {
         color: #e4e4e4;
         font-size: 16px;
       }
     }
-    aside {    
-      img {        
-        width: 55px;
-        height: 55px;
+
+    aside {
+      img {
         border-radius: 50%;
-        position: absolute;
+        height: 55px;
         left: 40px;
+        position: absolute;
+        width: 55px;
       }
     }
   }
