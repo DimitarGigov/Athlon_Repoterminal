@@ -3,143 +3,141 @@
 	Contact-Section
 =================================
 */
+
 .contacts {
   background-color: $white;
   height: 326px;
+
   .contact-info {
     background-color: $purple;
+    height: 246px;
+    left: 50px;
     position: relative;
     top: 40px;
-    left: 50px;
     width: 1180px;
-    height: 246px;
     @include breakpoint(desktopLaptop) {
-      height: 100%; 
+      left: 0;
       width: 100%;
-      left: 0px;
-      height: 246px;
     }
     @include breakpoint(desktopmini) {
-      height: 100%; 
+      left: 0;
       width: 100%;
-      left: 0px;
-      height: 246px;
     }
-    @include breakpoint(tablet) { 
-      height: 100%;
+    @include breakpoint(tablet) {
+      left: 0;
       width: 100%;
-      left: 0px;
-      height: 246px;
     }
-    @include breakpoint(mobile) { 
-      height: 100%;
+    @include breakpoint(mobile) {
+      left: 0;
       width: 100%;
-      left: 0px;
-      height: 246px;
     }
+
     h5 {
-      position: absolute;
-      top: 55px;
-      left: 500px;
+      color: $white;
       font-family: 'Source Sans Pro', sans-serif;
       font-size: 24px;
-      text-align: center;
+      left: 500px;
       letter-spacing: normal;
-      color: $white;
-      @include breakpoint(desktopLaptop) {
-        height: 100%; 
-        width: 100%;
-        left: 0px;
-      }
-      @include breakpoint(desktopmini) {
-        height: 100%; 
-        width: 100%;
-        left: 0px;
-      }
-      @include breakpoint(tablet) { 
-        height: 100%;
-        width: 100%;
-        left: 0px;
-      }
-      @include breakpoint(mobile) { 
-        height: 100%;
-        width: 100%;
-        left: 0px;
-      }
-    }
-    span {
       position: absolute;
       text-align: center;
-      top: 92px;
-      right: 426px;
-      left: 430px;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-size: 16px;
-      line-height: 1.5;
-      letter-spacing: normal;
-      color: $white;
+      top: 55px;
       @include breakpoint(desktopLaptop) {
         height: 100%;
+        left: 0;
         width: 100%;
-        left: 0px;
-        padding: 20px;
       }
       @include breakpoint(desktopmini) {
         height: 100%;
+        left: 0;
         width: 100%;
-        left: 0px;
-        padding: 20px;
       }
-      @include breakpoint(tablet) { 
+      @include breakpoint(tablet) {
         height: 100%;
+        left: 0;
         width: 100%;
-        left: 0px;
-        padding: 20px;
       }
-      @include breakpoint(mobile) { 
+      @include breakpoint(mobile) {
         height: 100%;
+        left: 0;
         width: 100%;
-        left: 0px;
-        padding: 20px;
       }
     }
-    div{
+
+    span {
+      color: $white;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 16px;
+      left: 430px;
+      letter-spacing: normal;
+      line-height: 1.5;
+      position: absolute;
+      right: 426px;
+      text-align: center;
+      top: 92px;
+      @include breakpoint(desktopLaptop) {
+        height: 100%;
+        left: 0;
+        padding: 20px;
+        width: 100%;
+      }
+      @include breakpoint(desktopmini) {
+        height: 100%;
+        left: 0;
+        padding: 20px;
+        width: 100%;
+      }
+      @include breakpoint(tablet) {
+        height: 100%;
+        left: 0;
+        padding: 20px;
+        width: 100%;
+      }
+      @include breakpoint(mobile) {
+        height: 100%;
+        left: 0;
+        padding: 20px;
+        width: 100%;
+      }
+    }
+
+    div {
+      left: 530px;
       position: absolute;
       text-align: center;
       top: 150px;
-      left: 530px;
       @include breakpoint(desktopLaptop) {
         height: 100%;
-        width: 100%;
+        left: 0;
         padding-top: 40px;
-        left: 0px;
+        width: 100%;
       }
       @include breakpoint(desktopmini) {
         height: 100%;
-        width: 100%;
+        left: 0;
         padding-top: 40px;
-        left: 0px;
+        width: 100%;
       }
-      @include breakpoint(tablet) { 
+      @include breakpoint(tablet) {
         height: 100%;
-        width: 100%;
+        left: 0;
         padding-top: 40px;
-        left: 0px;
+        width: 100%;
       }
-      @include breakpoint(mobile) { 
+      @include breakpoint(mobile) {
         height: 100%;
-        width: 100%;
+        left: 0;
         padding-top: 40px;
-        left: 0px;
+        width: 100%;
       }
+
       a {
         border: 2px solid $white;
         border-radius: 5px;
-        padding: 7px 27px 7px 28px;
         color: $white;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
         font-weight: 600;
+        padding: 7px 27px 7px 28px;
         text-align: center;
       }
     }
