@@ -19,26 +19,22 @@
 
 .primary-header {
   background-color: $white;
-  width: 1280px;
   margin: 0 auto;
+  width: 1280px;
   @include breakpoint(desktopLaptop) {
     background-color: $white;
-    height: 100%;
     width: 100%;
   }
   @include breakpoint(desktopmini) {
     background-color: $white;
-    height: 100%;
     width: 100%;
   }
   @include breakpoint(tablet) {
     background-color: $white;
-    height: 100%;
     width: 100%;
   }
   @include breakpoint(mobile) {
     background-color: $white;
-    height: 100%;
     width: 100%;
   }
 }
@@ -100,9 +96,6 @@
           position: absolute;
           right: 17px;
           top: 12px;
-          @include breakpoint(mobile) {
-            display: none;
-          }
         }
       }
 
@@ -125,10 +118,6 @@
     line-height: 60px;
     margin: 15px 30px 15px 50px;
     width: 177px;
-    @include breakpoint(mobile) {
-      background-color: $white;
-      margin-left: 5px;
-    }
   }
 }
 
@@ -197,7 +186,7 @@
           }
           @include breakpoint(mobile) {
             display: block;
-            left: 268px;
+            left: 320px;
           }
         }
       }
@@ -217,8 +206,7 @@
         right: 0;
       }
       @include breakpoint(mobile) {
-        display: block;
-        right: 0;
+        left: 0;
         top: 37px;
       }
 
