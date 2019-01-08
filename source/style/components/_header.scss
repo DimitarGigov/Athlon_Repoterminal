@@ -45,12 +45,6 @@
   font-size: 0;
   position: sticky;
   top: 0;
-  @include breakpoint(tablet) {
-    border: 0;
-  }
-  @include breakpoint(mobile) {
-    border: 0;
-  }
 
   ul {
     background-color: $white;
@@ -65,26 +59,22 @@
       position: relative;
       @include breakpoint(desktopLaptop) {
         display: inline;
-        height: auto;
-        left: 0;
+        left: 10px;
         width: 100%;
       }
       @include breakpoint(desktopmini) {
         display: inline;
-        height: auto;
-        left: 0;
+        left: 10px;
         width: 100%;
       }
       @include breakpoint(tablet) {
         display: inline;
-        height: auto;
-        left: 0;
+        left: 10px;
         width: 100%;
       }
       @include breakpoint(mobile) {
         display: inline;
-        height: auto;
-        left: 0;
+        left: 10px;
         width: auto;
       }
 
@@ -110,14 +100,34 @@
     }
   }
 }
+a {
+  width: 100%;
 
-.logo {
-  img {
-    background-color: $white;
-    float: left;
-    line-height: 60px;
-    margin: 15px 30px 15px 50px;
-    width: 177px;
+  .logo {
+    width: 100%;
+
+    img {
+      background-color: $white;
+      float: left;
+      line-height: 60px;
+      margin: 15px 30px 15px 50px;
+      width: 177px;
+      @include breakpoint(desktopmini) {
+        display: block;
+      }
+      @include breakpoint(tablet) {
+        display: inline-block;
+        height: 50px;
+        margin: 15px 0 15px 0;
+        width: 90px;
+      }
+      @include breakpoint(mobile) {
+        display: inline-block;
+        height: 50px;
+        margin: 15px 0 15px 0;
+        width: 90px;
+      }
+    }
   }
 }
 
@@ -144,6 +154,18 @@
 
   ul {
     background-color: $white;
+    @include breakpoint(desktopmini) {
+      left: 0;
+      width: 100%;
+    }
+    @include breakpoint(tablet) {
+      left: 0;
+      width: 100%;
+    }
+    @include breakpoint(mobile) {
+      left: 0;
+      width: 100%;
+    }
 
     li {
       display: inline-block;
@@ -156,13 +178,12 @@
         display: inline-block;
       }
       @include breakpoint(tablet) {
-        display: block;
-        margin: 0 auto;
-        margin-top: 5px;
+        display: inline-block;
       }
       @include breakpoint(mobile) {
-        display: block;
-        margin: 5px;
+        display: inline-block;
+        font-size: 12px;
+        margin: 40px 5px 37px;
       }
 
       a {
@@ -180,13 +201,10 @@
           position: absolute;
           right: 0;
           top: 6px;
-          @include breakpoint(tablet) {
-            display: block;
-            left: 320px;
-          }
           @include breakpoint(mobile) {
-            display: block;
-            left: 320px;
+            @include arrow(down, $black , 1.5);
+            right: 5px;
+            top: 5px;
           }
         }
       }
@@ -206,13 +224,21 @@
         right: 0;
       }
       @include breakpoint(mobile) {
-        left: 0;
-        top: 37px;
+        right: 0;
+        top: 10px;
       }
 
       img {
         height: 24px;
         width: 24px;
+        @include breakpoint(tablet) {
+          height: 18px;
+          width: 18px;
+        }
+        @include breakpoint(mobile) {
+          height: 14px;
+          width: 14px;
+        }
       }
     }
   }

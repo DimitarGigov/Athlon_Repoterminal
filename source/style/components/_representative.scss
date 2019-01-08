@@ -37,18 +37,6 @@
     opacity: .8;
     position: relative;
     top: 27px;
-    @include breakpoint(desktopmini) {
-      display: inline-block;
-      width: 100%;
-    }
-    @include breakpoint(tablet) {
-      display: inline-block;
-      width: 100%;
-    }
-    @include breakpoint(mobile) {
-      display: inline-block;
-      width: 100%;
-    }
 
     img {
       height: 18px;
