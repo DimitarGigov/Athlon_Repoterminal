@@ -24,8 +24,13 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 36px;
     font-weight: normal;
-    margin: 60px 414px 0 414px;
+    margin: 60px 414px 0;
     text-align: center;
+    @include breakpoint(desktopLaptop) {
+      height: 100%;
+      margin-left: 0;
+      width: 100%;
+    }
     @include breakpoint(desktopmini) {
       height: 100%;
       margin-left: 0;
@@ -50,10 +55,13 @@
     width: 900px;
     @include breakpoint(desktopmini) {
       height: 100%;
+      margin-left: 20px;
       width: 100%;
     }
     @include breakpoint(tablet) {
+      display: block;
       height: 100%;
+      margin-left: 20px;
       width: 100%;
     }
     @include breakpoint(mobile) {
@@ -71,10 +79,8 @@
       margin-right: 20px;
       order: 1;
       width: 100%;
-      @include breakpoint(mobile) {
-        display: block;
-        height: 100%;
-        width: 100%;
+      @include breakpoint(tablet) {
+        margin-bottom: 20px;
       }
 
       h6 {
@@ -84,13 +90,6 @@
         font-size: 24px;
         letter-spacing: normal;
         padding: 15px 0 15px 15px;
-        @include breakpoint(tablet) {
-          padding: 15px 0;
-        }
-        @include breakpoint(mobile) {
-          height: 100%;
-          width: 100%;
-        }
       }
 
       span {
@@ -118,12 +117,6 @@
         text-decoration: none;
         width: 130px;
         @include breakpoint(desktopmini) {
-          margin-bottom: 20px;
-        }
-        @include breakpoint(tablet) {
-          margin-bottom: 20px;
-        }
-        @include breakpoint(mobile) {
           margin-bottom: 20px;
         }
       }
