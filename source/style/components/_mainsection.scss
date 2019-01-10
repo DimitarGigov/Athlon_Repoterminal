@@ -78,15 +78,15 @@
     margin-top: 10px;
     width: 730px;
     @include breakpoint(desktopmini) {
-      padding: 30px;
+      padding: 10px 30px;
       width: 100%;
     }
     @include breakpoint(tablet) {
-      padding: 30px;
+      padding: 10px 30px;
       width: 100%;
     }
     @include breakpoint(mobile) {
-      padding: 40px;
+      padding: 10px 40px;
       width: 100%;
     }
   }
