@@ -17,26 +17,24 @@ function submitUserForm() {
   }
   return true;
 }
- 
+
 function verifyCaptcha() {
   document.getElementById('g-recaptcha-error').innerHTML = '';
-  }
- var bunnyVideo = document.getElementById("bVideo");
+}
 
+var bunnyVideo = document.getElementById('bVideo');
 function playPause() {
-  var el = document.getElementById("playButton");
+  var el = document.getElementById('playButton');
   if (bunnyVideo.paused) {
     bunnyVideo.play();
-    el.className ="";
+    el.className = '';
   } else {
-	
+
     bunnyVideo.pause();
-    el.className = "playButton";
+    el.className = 'playButton';
   }
 }
-	
-bunnyVideo.addEventListener("click", playPause, false);
-	
+bunnyVideo.addEventListener('click', playPause, false);
 /*
 To use jQuery, first install it as a dependency: `yarn add jquery`.
 Then include `import $ from 'jquery';` at the top every JavaScript file that uses jQuery.
