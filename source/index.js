@@ -31,7 +31,7 @@ function playPause() {
   } else {
 
     bunnyVideo.pause();
-    el.className = "playButton";
+    el.className = 'playButton';
   }
 }
 bunnyVideo.addEventListener('click', playPause, false);
