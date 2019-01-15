@@ -8,10 +8,10 @@ const saySomething = (something) => {
 };
 
 saySomething('Something! (index.js)');
-		
+
 function submitUserForm() {
   var response = grecaptcha.getResponse();
-  if (response.length == 0) {
+  if (response.length === 0) {
     document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
     return false;
   }
@@ -29,7 +29,6 @@ function playPause() {
     bunnyVideo.play();
     el.className = '';
   } else {
-
     bunnyVideo.pause();
     el.className = 'playButton';
   }
