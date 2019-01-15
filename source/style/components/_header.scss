@@ -118,13 +118,13 @@ a {
       @include breakpoint(tablet) {
         display: inline-block;
         height: 50px;
-        margin: 15px 0 15px 0;
+        margin: 15px 0;
         width: 90px;
       }
       @include breakpoint(mobile) {
         display: inline-block;
         height: 50px;
-        margin: 15px 0 15px 0;
+        margin: 15px 0;
         width: 90px;
       }
     }

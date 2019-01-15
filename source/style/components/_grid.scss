@@ -240,11 +240,11 @@
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
         font-weight: 600;
+        margin-bottom: 20px;
+        margin-left: 15px;
         padding: 7px 17px 7px 18px;
         text-decoration: none;
         width: 130px;
-        margin-left: 15px;
-        margin-bottom: 20px;
         @include breakpoint(desktopmini) {
           margin-bottom: 20px;
         }

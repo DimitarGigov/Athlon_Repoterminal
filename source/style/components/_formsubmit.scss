@@ -9,22 +9,20 @@
     margin: -70px 0 0;
     width: 400px;
     @include breakpoint(desktopLaptop) {
-      width: 400px;
+      
     }
     @include breakpoint(desktopmini) {
       margin: auto;
-      width: 400px;
     }
     @include breakpoint(tablet) {
       display: block;
       margin: 0 auto;
       margin-top: 20px;
-      width: 400px;
+      width: 320px;
     }
     @include breakpoint(mobile) {
       margin-left: 20px;
       margin-top: 20px;
-      width: 400px;
     }
 
     .support {
