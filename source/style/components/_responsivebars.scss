@@ -1,0 +1,178 @@
+/*
+=================================
+	Responsive-header
+=================================
+*/
+.active {
+  background-color: $white;
+  display: none;
+  @include breakpoint(desktopmini) {
+    display: block;
+    margin-bottom: 20px;
+  }
+  @include breakpoint(tablet) {
+    display: block;
+    margin-bottom: 20px;
+  }
+  @include breakpoint(mobile) {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  li {
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 40px 35px 37px 20px;
+    @include breakpoint(desktopmini) {
+      background-color: $white;
+      font-size: 20px;
+      margin: 12px 0 ;
+      text-align: center;
+      width: 100%;
+    }
+    @include breakpoint(tablet) {
+      background-color: $white;
+      font-size: 20px;
+      margin: 12px 0 ;
+      text-align: center;
+      width: 100%;
+    }
+    @include breakpoint(mobile) {
+      background-color: $white;
+      font-size: 20px;
+      margin: 12px 0 ;
+      text-align: center;
+      width: 100%;
+    }
+
+    a {
+      color: $black;
+      opacity: .7;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: solid $black 3px;
+        opacity: 1;
+        transition: .3s;
+      }
+    }
+
+    .arrow {
+      color: $black;
+
+      &::before {
+        @include arrow(down, $black , 2.5);
+        background: $white;
+        content: '';
+        margin-right: -14px;
+        position: absolute;
+        right: 0;
+        top: 6px;
+        @include breakpoint(desktopmini) {
+          @include arrow(down, $black , 2.5);
+          display: none;
+          right: 580px;
+          top: 10px;
+        }
+        @include breakpoint(tablet) {
+          @include arrow(down, $black , 2.5);
+          display: none;
+          right: 3px;
+          top: 6px;
+        }
+        @include breakpoint(mobile) {
+          @include arrow(down, $black , 2.5);
+          display: none;
+          right: 3px;
+          top: 6px;
+        }
+      }
+    }
+  }
+}
+
+.toggle {
+  background-color: $white;
+  display: none;
+  position: relative;
+  @include breakpoint(desktopmini) {
+    display: flex;
+    height: 80px;
+    width: 100%;
+  }
+  @include breakpoint(tablet) {
+    display: flex;
+    height: 80px;
+    width: 100%;
+  }
+  @include breakpoint(mobile) {
+    display: flex;
+    height: 80px;
+    width: 100%;
+  }
+
+  .menu {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 25px;
+    transform: rotate(-180deg);
+    transition:  1s;
+
+    &:hover {
+      transform: rotate(180deg);
+    }
+    @include breakpoint(desktopmini) {
+      display: flex;
+      right: 20px;
+      z-index: 1;
+    }
+    @include breakpoint(tablet) {
+      display: flex;
+      right: 20px;
+      z-index: 1;
+    }
+    @include breakpoint(mobile) {
+      display: flex;
+      right: 20px;
+      z-index: 1;
+    }
+  }
+
+  .searchbarimg {
+    display: none;
+    transform: scale(.9);
+    transition: 1s;
+    position: absolute;
+    width: 50px;
+    z-index: 1;
+
+    &:hover {
+      transform: scale(1);
+    }
+    @include breakpoint(desktopmini) {
+      display: flex;
+      left: 20px;
+      top: 20px;
+    }
+    @include breakpoint(tablet) {
+      display: flex;
+      left: 20px;
+      top: 20px;
+    }
+    @include breakpoint(mobile) {
+      display: flex;
+      left: 20px;
+      top: 20px;
+    }
+
+    img {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}
+
+  
