@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
+ <head>
  <title>Athlon Project</title>
  <meta charset="utf-8">
  <link rel="stylesheet" type="text/css" href="styles/style.css">
- <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<link href="style33.css?3f77ff0ef177a812c84b" rel="stylesheet"></head>
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+ <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script type="text/javascript">
+    $(document).ready(function(){
+		$('.menu').click(function(){
+			$('.active').toggle('fast')
+		})
+	})
+ </script>
+ <link href="style33.css?1abdad1c2dcf1dffb69e" rel="stylesheet"></head>
 <body>
+	<!--Responsive-navbar-->
+	<div class="toggle">
+		<i class="fa fa-bars menu" aria-hidden="true"></i>
+		<a href="#" class="searchbarimg"><img src="images/search.png"></a>
+		<a href="index.html" class="mobilelogo">
+			<img src="images/clarivate.png" alt="This is the website logo">
+		</a>
+	</div>
+	<ul class="active">
+		<li><a href="#" class="arrow">Products</a></li>
+		<li><a href="#" class="arrow">Speciality</a></li>
+		<li><a href="#">Newsroom</a></li>
+		<li><a href="#" class="arrow">About</a></li>
+		<li><a href="#">Blog</a></li>
+		<li><a href="contacts.html">Contact Us</a></li>
+	</ul>
 	<!-- Sticky-->
 	<article class="group container navbar-top" id="back-to-top">
-		<ul>
-			<li><a href="contacts.html">Contact Us</a></li>
-			<li><a href="#">Customer Care</a></li>
-			<li><a href="#">Careers</a></li>
-			<li><a href="#" class="dropdownicon">Regional Sites</a></li>
-		</ul>
-	</article>
-<header class="primary-header container">
+ 		<ul>
+ 			<li><a href="contacts.html">Contact Us</a></li>
+ 			<li><a href="#">Customer Care</a></li>
+ 			<li><a href="#">Careers</a></li>
+ 			<li><a href="#" class="dropdownicon">Regional Sites</a></li>
+ 		</ul>
+	 </article>
+<header class="primary-header">
 	<nav class="group container navbar-bottom">
-		<a href="index.html">
-			<aside class="logo">
-				<img src="images/clarivate.png" alt="This is the website logo">
-			</aside>
-		</a>
-		<ul>
-			<li><a href="#" class="arrow">Products</a></li>
-			<li><a href="#" class="arrow">Speciality</a></li>
-			<li><a href="#">Newsroom</a></li>
-			<li><a href="#" class="arrow">About</a></li>
+		<aside class="logo">
+			<a href="index.html">
+			   <img src="images/clarivate.png" alt="This is the website logo">
+			</a>
+		</aside>
+ 		<ul>
+ 			<li><a href="#" class="arrow">Products</a></li>
+ 			<li><a href="#" class="arrow">Speciality</a></li>
+ 			<li><a href="#">Newsroom</a></li>
+ 			<li><a href="#" class="arrow">About</a></li>
 			<li><a href="#">Blog</a></li>
-			<a href="#" class="searchbutton"><img src="images/search.png"></a>
-		</ul>
-	</nav>
-</header>
+		 </ul>
+		 <a href="#" class="searchbutton"><img src="images/search.png"></a>
+ 	</nav>
+ </header>
 			<!-- Mask -->
  <section class="container mask">
  	<aside>
@@ -59,19 +83,26 @@
 				 <label>
  					<h6>Job Role<span>*</span></h6>
  					<select required >
- 						<option value="" disabled selected>Select job role</option>
- 						<option></option>
- 						<option></option>
- 						<option></option>
+ 						<option value="">Select job role</option>
+ 						<option>Sales</option>
+ 						<option>Accountant</option>
+						<option>Administrator</option>
+						<option>Brand Manager</option>
+						<option>Engineer</option>
+						<option>Technical Specialist</option>
  					</select>
 				 </label>
 				 <label>
  				  <h6>Organisation type<span>*</span></h6>
  				  <select required >
- 						<option value="" disabled selected>Select organisation type</option>
- 						<option></option>
- 						<option></option>
- 						<option></option>
+ 						<option value="">Select organisation type</option>
+ 						<option>Non Profit</option>
+ 						<option>Government</option>
+						<option>Technology</option>
+						<option>Academic</option>
+						<option>Automotive</option>
+						<option>Chemicals</option>
+						<option>Insurance</option>
  				  </select>
 				 </label>
 				 <label>
@@ -81,10 +112,16 @@
 				 <label>
  					<h6>State/province<span>*</span></h6>
  					<select required>
- 						<option value="" disabled selected>Select state/province</option>
- 						<option></option>
- 						<option></option>
- 						<option></option>
+ 						<option value="">Select state/province</option>
+ 						<option>New Jersey</option>
+ 						<option>Texas</option>
+						<option>Florida</option>
+						<option>Ohio</option>
+						<option>Alabama</option>
+						<option>Colorado</option>
+						<option>Montana</option>
+						<option>Alaska</option>
+						<option>Michigan</option>
  					</select>
 				</label>
 			</section>
@@ -105,10 +142,14 @@
  				<label>
  					<h6>Country<span>*</span></h6>
  					<select required>
- 						<option value="" selected data-default>Select country</option>
- 						<option></option>
- 						<option></option>
- 						<option></option>
+ 						<option value=""  data-default>Select country</option>
+ 						<option>Bulgaria</option>
+ 						<option>Germany</option>
+						<option>Austria</option>
+						<option>Greece</option>
+						<option>Brazil</option>
+						<option>Spain</option>
+						<option>Japan</option>
  					</select>
  				</label>
  				<label>
@@ -171,5 +212,5 @@
   	  </ul>
  	</article>
  </footer>
-<script type="text/javascript" src="index.js?3f77ff0ef177a812c84b"></script></body>
+<script type="text/javascript" src="index.js?1abdad1c2dcf1dffb69e"></script></body>
 </html>
