@@ -35,8 +35,14 @@
     letter-spacing: .05em;
     line-height: normal;
     opacity: .8;
-    position: relative;
+    position: absolute;
     top: 27px;
+    @include breakpoint(tablet) {
+      left: 10px;
+    }
+    @include breakpoint(mobile) {
+      left: 10px;
+    }
 
     img {
       height: 18px;
