@@ -42,11 +42,13 @@
       width: 100%;
     }
     @include breakpoint(tablet) {
+      font-size: 20px;
       margin-left: 20px;
       padding: 20px;
       width: 100%;
     }
     @include breakpoint(mobile) {
+      font-size: 20px;
       margin-left: 20px;
       padding: 20px;
       width: 100%;

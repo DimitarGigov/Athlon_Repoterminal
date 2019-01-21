@@ -39,17 +39,17 @@
       right: 0;
     }
     @include breakpoint(desktopmini) {
-      display: inline;
+      display: none;
       margin-top: 30px;
       right: 0;
     }
     @include breakpoint(tablet) {
-      display: inline;
+      display: none;
       margin-top: 30px;
       right: 0;
     }
     @include breakpoint(mobile) {
-      display: inline;
+      display: none;
       margin-top: 30px;
       right: 0;
     }
