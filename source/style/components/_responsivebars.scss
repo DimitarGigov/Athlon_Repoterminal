@@ -141,11 +141,43 @@
     }
   }
 
+  .mobilelogo {
+    display: none;
+    @include breakpoint(desktopmini) {
+      display: flex;
+    }
+    @include breakpoint(tablet) {
+      display: flex;
+    }
+    @include breakpoint(mobile) {
+      display: flex;
+    }
+
+    img {
+      display: none;
+      @include breakpoint(desktopmini) {
+        display: flex;
+        padding: 10px;
+        width: 150px;
+      }
+      @include breakpoint(tablet) {
+        display: flex;
+        padding: 10px;
+        width: 150px;
+      }
+      @include breakpoint(mobile) {
+        display: flex;
+        padding: 10px;
+        width: 150px;
+      }
+    }
+  }
+
   .searchbarimg {
     display: none;
+    position: absolute;
     transform: scale(.9);
     transition: 1s;
-    position: absolute;
     width: 50px;
     z-index: 1;
 
@@ -154,17 +186,17 @@
     }
     @include breakpoint(desktopmini) {
       display: flex;
-      left: 20px;
+      right: 40px;
       top: 20px;
     }
     @include breakpoint(tablet) {
       display: flex;
-      left: 20px;
+      right: 40px;
       top: 20px;
     }
     @include breakpoint(mobile) {
       display: flex;
-      left: 20px;
+      right: 40px;
       top: 20px;
     }
 
