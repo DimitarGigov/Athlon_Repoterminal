@@ -6,24 +6,18 @@
  <link rel="stylesheet" type="text/css" href="styles/style.css">
  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
- <script type="text/javascript">
-    $(document).ready(function(){
-		$('.menu').click(function(){
-			$('.active').toggle('fast')
-		})
-	})
- </script>
- <link href="style33.css?cb0cc6f179432c912a4e" rel="stylesheet"></head>
+ <script type="text/javascript" src="more-javascript/toggleclass.js"></script>
+ <link href="style33.css?c1e2cbe12a9b908d657c" rel="stylesheet"></head>
 <body>
 	<!--Responsive-navbar-->
 	<div class="toggle">
-		<i class="fa fa-bars menu" aria-hidden="true"></i>
+		<i class="fa fa-bars menu" aria-hidden="true" onclick="myFunction()"></i>
 		<a href="#" class="searchbarimg"><img src="images/search.png"></a>
 		<a href="index.html" class="mobilelogo">
 			<img src="images/clarivate.png" alt="This is the website logo">
 		</a>
-	</div>
-	<ul class="active">
+		</div>
+	<ul class="inactive active" id="barlist">
 		<li><a href="#" class="arrow">Products</a></li>
 		<li><a href="#" class="arrow">Speciality</a></li>
 		<li><a href="#">Newsroom</a></li>
@@ -212,5 +206,5 @@
   	  </ul>
  	</article>
  </footer>
-<script type="text/javascript" src="index.js?cb0cc6f179432c912a4e"></script></body>
+<script type="text/javascript" src="index.js?c1e2cbe12a9b908d657c"></script></body>
 </html>
