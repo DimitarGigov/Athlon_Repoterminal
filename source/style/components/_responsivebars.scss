@@ -3,6 +3,10 @@
 	Responsive-header
 =================================
 */
+.inactive {
+  display: none;
+}
+
 .active {
   background-color: $white;
   display: none;

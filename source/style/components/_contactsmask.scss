@@ -24,7 +24,12 @@
     left: 50px;
     position: absolute;
     top: 27px;
-
+    @include breakpoint(tablet) {
+      left: 20px;
+    }
+    @include breakpoint(mobile) {
+      left: 20px;
+    }
     a {
       color: $white;
       font-size: 14px;
