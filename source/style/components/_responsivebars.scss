@@ -161,17 +161,17 @@
       display: none;
       @include breakpoint(desktopmini) {
         display: flex;
-        padding: 10px;
+        padding: 17px;
         width: 150px;
       }
       @include breakpoint(tablet) {
         display: flex;
-        padding: 10px;
+        padding: 17px;
         width: 150px;
       }
       @include breakpoint(mobile) {
         display: flex;
-        padding: 10px;
+        padding: 17px;
         width: 150px;
       }
     }

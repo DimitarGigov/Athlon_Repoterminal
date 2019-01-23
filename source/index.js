@@ -1,5 +1,6 @@
 // import $ from 'jquery'; Before using jQuery, install it with `yarn add jquery`
 import './more-javascript/more.js';
+import './more-javascript/toggleclass.js';
 import './style/style.scss';
 import './style/vendor/style.css';
 
